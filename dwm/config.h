@@ -70,6 +70,9 @@ static const char *termcmd[]  = { "sh", "-c", "st -d \"$(xcwd)\"", NULL };
 static const char *rofi[]  = { "rofi", "-show", "drun", "-theme", "~/.config/rofi/config.rasi", NULL };
 static const char *browsercmd[]  = { "firefox", NULL };
 static const char *fmcmd[]  = { "thunar", NULL };
+static const char *screenshotgui[]  = { "flameshot", "gui", NULL };
+static const char *screenshotfull[]  = { "flameshot", "full", NULL };
+static const char *screenlockcmd[]  = { "slock", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -78,6 +81,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = rofi } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = fmcmd } },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screenshotgui } },
+	{ 0,                            XK_Print,  spawn,          {.v = screenshotfull } },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = screenlockcmd } },
   { MODKEY,                       XK_p,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
