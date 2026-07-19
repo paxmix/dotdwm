@@ -33,8 +33,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class            instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",           NULL,       NULL,       0,            1,           -1 },
 	{ "zen",            NULL,       NULL,       1 << 0,       0,           -1 },
+	{ "steam",          NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "Thunar",         NULL,       NULL,       1 << 2,       0,           -1 },
 };
 
 /* layout(s) */
@@ -68,6 +69,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *rofi[]  = { "rofi", "-show", "drun", "-theme", "~/.config/rofi/config.rasi", NULL };
 static const char *browsercmd[]  = { "zen-browser", NULL };
+static const char *fmcmd[]  = { "thunar", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -75,7 +77,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = rofi } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browsercmd } },
-    { MODKEY,                       XK_p,      togglebar,      {0} },
+	{ MODKEY,                       XK_e,      spawn,          {.v = fmcmd } },
+  { MODKEY,                       XK_p,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
