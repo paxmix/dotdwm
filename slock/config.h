@@ -10,3 +10,6 @@ static const char *colorname[NUMCOLS] = {
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
+
+/* border width in pixels */
+static const int BORDER_WIDTH = 8;
