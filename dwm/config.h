@@ -11,8 +11,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "CommitMono Nerd Font Mono:style=Bold:size=12" };
-static const char dmenufont[]       = "CommitMono Nerd Font Mono:style=Bold:size=12";
+static const char *fonts[]          = { "IoPaxka:style=Bold:size=12" };
+static const char dmenufont[]       = "IoPaxka:style=Bold:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -67,8 +67,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "sh", "-c", "st -d \"$(xcwd)\"", NULL };
-static const char *browsercmd[]  = { "firefox", NULL };
-static const char *fmcmd[]  = { "thunar", NULL };
+static const char *browsercmd[]  = { "helium-browser", NULL };
+static const char *fmcmd[]  = { "pcmanfm-qt", NULL };
 static const char *screenshotgui[]  = { "flameshot", "gui", NULL };
 static const char *screenshotfull[]  = { "flameshot", "full", NULL };
 static const char *screenlockcmd[]  = { "slock", NULL };
