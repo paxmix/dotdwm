@@ -19,3 +19,4 @@ shfmt = "latest"
 # Mise autocompletes
 usage = "latest"
 helix = "latest"
+yazi = "latest"
