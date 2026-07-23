@@ -7,7 +7,7 @@
 ### Install Nvidia drivers first
 
 sudo apt install extrepo build-essential linux-headers-amd64\
-extrepo enable nvidia-cuda\
+extrepo enable nvidia-cuda mise\
 sudo apt update\
 sudo apt install nvidia-open\
 sudo apt install fastfetch git curl
@@ -58,3 +58,11 @@ gh auth login
 mise use -g node@lts\
 mise use -g usage\
 mise use -g go
+
+## Dark theme
+
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'\
+gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'\
+gsettings set org.gnome.desktop.interface cursor-size 24\
+gsettings set org.gnome.desktop.default-applications.terminal exec 'st'\
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
