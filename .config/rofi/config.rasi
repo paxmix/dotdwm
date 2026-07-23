@@ -1,0 +1,125 @@
+configuration {
+    modi: "run,drun,window";
+    icon-theme: "Papirus-Dark";
+    show-icons: true;
+    terminal: "st";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 󰖲  Window";
+    sidebar-mode: false;
+	
+    //adding vim keybindings
+    kb-row-up: "Up,Control+p,Control+k";
+    kb-row-down: "Down,Control+j";
+    kb-accept-entry: "Return,KP_Enter";
+	kb-mode-next: "Shift+Right,Control+Tab,Control+l";
+    kb-mode-previous: "Shift+Left,Control+Shift+Tab,Control+h";
+
+    //fixing up
+    kb-remove-to-eol: "";
+    kb-move-char-back: "Control+b";
+    kb-remove-char-back: "BackSpace";
+    kb-move-char-forward: "Control+f";
+    kb-mode-complete: "Control+o";
+}
+
+@theme "/dev/null"
+
+* {
+    /* Kanagawa Palette Colors */
+    bg-col:          #1f1f28;  /* SumiInk1 */
+    bg-col-light:    #2a2a37;  /* SumiInk3 */
+    border-col:      #363646;  /* SumiInk4 */
+    selected-col:    #2d4f67;  /* WaveBlue2 */
+    accent-col:      #76946a;  /* AutumnGreen */
+    fg-col:          #dcd7ba;  /* FujiWhite */
+    fg-dim:          #c8c093;  /* SpringViolet2 / Dim Text */
+    accent-warm:     #ff9e3b;  /* RoninYellow */
+
+    width: 600;
+    font: "IoPaxka Nerd Font 12";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    height: 360;
+    border: 2px;
+    border-color: @accent-col;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-col;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: @accent-col;
+    padding: 6px;
+    text-color: @bg-col;
+    border-radius: 3px;
+    margin: 10px 0px 0px 10px;
+}
+
+entry {
+    padding: 6px;
+    margin: 10px 0px 0px 10px;
+    text-color: @fg-col;
+    background-color: @bg-col;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 10px;
+    columns: 1;
+    lines: 5;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 6px;
+    background-color: @bg-col;
+    text-color: @fg-dim;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    background-color:  @selected-col;
+    text-color: @fg-col;
+    border-radius: 3px;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: @bg-col-light;
+    text-color: @fg-dim;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+    background-color: @border-col;
+    text-color: @accent-warm;
+}

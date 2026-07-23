@@ -1,0 +1,25 @@
+
+[Default Applications]
+inode/directory=thunar.desktop
+text/plain=featherpad.desktop
+image/jpeg=lximage-qt.desktop
+image/png=lximage-qt.desktop
+image/gif=lximage-qt.desktop
+image/webp=lximage-qt.desktop
+video/mp4=vlc.desktop
+video/x-matroska=vlc.desktop
+video/quicktime=vlc.desktop
+video/webm=vlc.desktop
+video/x-flv=vlc.desktop
+audio/mpeg=org.strawberrymusicplayer.strawberry.desktop
+audio/ogg=org.strawberrymusicplayer.strawberry.desktop
+audio/mp4=org.strawberrymusicplayer.strawberry.desktop
+audio/wav=org.strawberrymusicplayer.strawberry.desktop
+audio/flac=org.strawberrymusicplayer.strawberry.desktop
+audio/aac=org.strawberrymusicplayer.strawberry.desktop
+application/pdf=qpdfview.desktop
+text/html=helium.desktop
+x-scheme-handler/http=helium.desktop
+x-scheme-handler/https=helium.desktop
+x-scheme-handler/about=helium.desktop
+x-scheme-handler/unknown=helium.desktop
