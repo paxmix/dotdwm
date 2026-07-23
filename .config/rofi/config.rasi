@@ -41,7 +41,7 @@ configuration {
     accent-warm:     #ff9e3b;  /* RoninYellow */
 
     width: 600;
-    font: "IoPaxka Nerd Font 12";
+    font: "monospace 12";
 }
 
 element-text, element-icon , mode-switcher {
