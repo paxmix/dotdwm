@@ -14,7 +14,7 @@ configuration {
 	
     //adding vim keybindings
     kb-row-up: "Up,Control+p,Control+k";
-    kb-row-down: "Down,Control+j";
+    kb-row-down: "Down,Control+n,Control+j";
     kb-accept-entry: "Return,KP_Enter";
 	kb-mode-next: "Shift+Right,Control+Tab,Control+l";
     kb-mode-previous: "Shift+Left,Control+Shift+Tab,Control+h";
