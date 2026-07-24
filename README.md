@@ -23,7 +23,7 @@ sudo apt install git curl
 - Use Chris Titus to install some useful stuffs (tty fonts, ufw recommended rules, sounds, etc)
 
 sudo apt install xorg xinit libx11-dev libxinerama-dev libxft-dev libxrandr-dev fastfetch
-libxrandr-dev rofi picom dunst xsettingsd btop xclip tealdeer pavucontrol helix
+libxrandr-dev rofi picom dunst xsettingsd btop xclip tealdeer pavucontrol helix gnome-disk-utility
 feh breeze-cursor-theme dconf-cli gh stow eza zoxide fzf lazygit fcitx5-bamboo vlc lximage-qt
 lxqt-policykit qbittorrent strawberry yt-dlp featherpad qt-style-kvantum qt5ct qt6ct fonts-noto
 pipewire-jack qpdfview flatpak gamemode gnome-themes-extra bat lldb trash-cli thunar
