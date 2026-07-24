@@ -7,7 +7,8 @@
 ### Install Nvidia drivers first
 
 sudo apt install extrepo build-essential linux-headers-amd64\
-extrepo enable nvidia-cuda mise\
+extrepo enable nvidia-cuda\
+extrepo enable mise\
 sudo apt update\
 sudo apt install nvidia-open\
 sudo apt install fastfetch git curl
@@ -20,7 +21,9 @@ feh breeze-cursor-theme dconf-cli gh stow eza zoxide fzf lazygit fcitx5-bamboo v
 lxqt-policykit qbittorrent strawberry yt-dlp featherpad qt-style-kvantum qt5ct qt6ct fonts-noto
 pipewire-jack qpdfview flatpak gamemode gnome-themes-extra bat lldb trash-cli thunar
 thunar-archive-plugin thunar-media-tags-plugin thunar-vcs-plugin thunar-volman flameshot
-lximage-qt gammastep xcwd mise libnotify-bin timeshift
+lximage-qt gammastep xcwd mise libnotify-bin timeshift ttf-mscorefonts-installer ffmpeg
+firmware-linux firmware-linux-nonfree firmware-misc-nonfree gstreamer1.0-plugins-bad
+gstreamer1.0-plugins-ugly gstreamer1.0-libav libavcodec-extra gamemode
 
 - For rofi:\
 sudo apt install rofi-dev autoconf automake libtool-bin libtool
@@ -35,7 +38,7 @@ app.zen_browser.zen\
 com.github.tchx84.Flatseal\
 com.github.unrud.VideoDownloader\
 com.vysp3r.ProtonPlus\
-dev.vencord.Vesktop\
+com.discordapp.Discord\
 org.localsend.localsend_app\
 org.libreoffice.LibreOffice
 
@@ -47,8 +50,8 @@ sudo ufw reload
 
 ### Start app cache
 
-tldr --update && bat cache --build
-
+tldr --update
+ 
 ## Git setup
 
 git config --global user.name "paxmix"\
