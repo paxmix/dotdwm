@@ -80,8 +80,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. "$HOME/.cargo/env"
-
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	command yazi "$@" --cwd-file="$tmp"
